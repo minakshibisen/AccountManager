@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AccountManager</string>
+    <string name="last_update">Last Update</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_any_account">Don\'t have any account?</string>
+    <string name="signup">SignUp</string>
+    <string name="_0987654321">0987654321</string>
+    <string name="password">Password</string>
+    <string name="phone">Phone</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="signin">SignIn</string>
+</resources>
