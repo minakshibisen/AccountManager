@@ -8,5 +8,13 @@
     <string name="password">Password</string>
     <string name="phone">Phone</string>
     <string name="forget_password">Forget Password</string>
-    <string name="signin">SignIn</string>
+    <string name="signin">Sign In</string>
+    <string name="credit">Credit</string>
+    <string name="_1000">₹1000</string>
+    <string name="debit">Debit</string>
+    <string name="balance">Balance</string>
+    <string name="updated_yesterday">Updated Yesterday</string>
+    <string name="cashbook">Cashbook</string>
+    <string name="book_name">Book Name</string>
+    <string name="date">DATE</string>
 </resources>

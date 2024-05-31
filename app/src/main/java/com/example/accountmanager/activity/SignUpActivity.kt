@@ -15,7 +15,7 @@ class SignUpActivity : AppCompatActivity() {
         binding.textSignin.setOnClickListener {
             startActivity(Intent(this,LoginActivity::class.java))
         }
-        binding.textLogin.setOnClickListener {
+        binding.cardSignup.setOnClickListener {
             startActivity(Intent(this,DashboardActivity::class.java))
         }
     }

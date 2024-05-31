@@ -13,7 +13,7 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.cardLogin.setOnClickListener {
+        binding.cardSignin.setOnClickListener {
             startActivity(Intent(this, DashboardActivity::class.java))
         }
     }
