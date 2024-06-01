@@ -17,4 +17,7 @@
     <string name="cashbook">Cashbook</string>
     <string name="book_name">Book Name</string>
     <string name="date">DATE</string>
+    <string name="add">Add</string>
+    <string name="particular">Particular</string>
+    <string name="amount">Amount</string>
 </resources>
