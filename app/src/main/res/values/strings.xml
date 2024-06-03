@@ -25,4 +25,7 @@
     <string name="_17_660">₹ 17,660</string>
     <string name="_17_66099">₹ 17,66099</string>
     <string name="todo">TODO</string>
+    <string name="account_name">Account Name</string>
+    <string name="category">Category</string>
+    <string name="save">Save</string>
 </resources>

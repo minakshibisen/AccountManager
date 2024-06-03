@@ -55,4 +55,9 @@ dependencies {
     implementation "com.airbnb.android:lottie:3.4.0"
     // Rounded Bottom sheet
     implementation 'com.github.Deishelon:RoundedBottomSheet:1.0.1'
+    // Spinner
+    implementation "com.github.skydoves:powerspinner:1.2.7"
+
+    // Material Spinner
+    implementation 'com.jaredrummler:material-spinner:1.3.1'
 }
