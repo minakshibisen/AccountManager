@@ -3,8 +3,10 @@ package com.example.accountmanager.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.accountmanager.DetailActivity
 import com.example.accountmanager.R
+import com.example.accountmanager.adapter.DashboardRecyclerAdapter
 import com.example.accountmanager.databinding.ActivityDashboardBinding
 
 class DashboardActivity : AppCompatActivity() {
@@ -14,9 +16,9 @@ class DashboardActivity : AppCompatActivity() {
         binding = ActivityDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.cardDetail.setOnClickListener {
-            startActivity(Intent(this,DetailActivity::class.java))
-        }
+        binding.recyclerDashboard.adapter = DashboardRecyclerAdapter(this)
+        binding.recyclerDashboard.layoutManager = LinearLayoutManager(this)
+
 
     }
 }

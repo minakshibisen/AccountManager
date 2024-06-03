@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
+    tools:ignore="true"
     tools:context=".DetailActivity">
 
     <RelativeLayout
@@ -16,7 +17,7 @@
         android:padding="@dimen/_10sdp">
 
         <ImageView
-            android:id="@+id/img_menu"
+            android:id="@+id/img_back"
             android:layout_width="@dimen/_25sdp"
             android:layout_height="@dimen/_25sdp"
             android:layout_alignParentStart="true"
@@ -30,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_marginStart="@dimen/_10sdp"
-            android:layout_toRightOf="@id/img_menu"
+            android:layout_toRightOf="@id/img_back"
             android:orientation="vertical"
             android:padding="@dimen/_2sdp">
 
@@ -61,7 +62,8 @@
                 android:layout_height="@dimen/_28sdp"
                 android:padding="@dimen/_3sdp"
                 android:src="@drawable/baseline_find_in_page_24"
-                app:tint="@color/white" />
+                app:tint="@color/white"
+                android:contentDescription="@string/todo" />
 
             <ImageView
                 android:id="@+id/ic_add"
@@ -82,6 +84,7 @@
     </RelativeLayout>
 
     <TableLayout
+        android:id="@+id/tab_detail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/header"
@@ -97,55 +100,51 @@
             android:showDividers="middle">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/_15sdp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/hero_regular"
                 android:gravity="center"
                 android:paddingHorizontal="@dimen/_2sdp"
                 android:paddingVertical="@dimen/_4sdp"
-                android:text="S.N"
+                android:text="@string/s_n"
                 android:textColor="@color/text_black"
                 android:textSize="@dimen/_9sdp" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="@dimen/_60sdp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/hero_regular"
                 android:gravity="center"
                 android:showDividers="middle"
                 android:paddingVertical="@dimen/_4sdp"
                 android:text="Date"
-                android:layout_weight="2"
                 android:textColor="@color/text_black"
                 android:textSize="@dimen/_11sdp" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="@dimen/_115sdp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/hero_regular"
                 android:gravity="center"
                 android:paddingVertical="@dimen/_4sdp"
                 android:text="Particular"
-                android:layout_weight="4.8"
                 android:textColor="@color/text_black"
                 android:textSize="@dimen/_11sdp" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="@dimen/_60sdp"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/hero_regular"
                 android:gravity="center"
                 android:paddingVertical="@dimen/_4sdp"
                 android:text="Debit"
-                android:layout_weight="1.6"
                 android:textColor="@color/text_black"
                 android:textSize="@dimen/_11sdp" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="@dimen/_60sdp"
                 android:paddingVertical="@dimen/_4sdp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1.6"
                 android:fontFamily="@font/hero_regular"
                 android:gravity="center"
                 android:text="@string/credit"
@@ -160,11 +159,16 @@
 
     </TableLayout>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tab_detail"
+        android:id="@+id/recycler_detail"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginHorizontal="@dimen/_2sdp"
         android:orientation="horizontal"
         android:background="@drawable/custom_gradiant_background"
         android:paddingVertical="@dimen/_3sdp"
@@ -175,7 +179,6 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/_2sdp"
             android:layout_weight="1"
-            android:background="@drawable/custom_bg_credit"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="@dimen/_15sdp">
@@ -195,18 +198,21 @@
                 android:layout_marginTop="@dimen/_5sdp"
                 android:fontFamily="@font/hero_bold"
                 android:gravity="center"
-                android:text="₹ 17,660"
+                android:text="@string/_17_660"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_11sdp" />
 
         </LinearLayout>
-
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/lightest_gray" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/_2sdp"
             android:layout_weight="1"
-            android:background="@drawable/custom_bg_credit"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="@dimen/_15sdp">
@@ -231,13 +237,16 @@
                 android:textSize="@dimen/_11sdp" />
 
         </LinearLayout>
-
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/lightest_gray" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/_2sdp"
             android:layout_weight="1"
-            android:background="@drawable/custom_bg_credit"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="@dimen/_15sdp">
@@ -257,7 +266,7 @@
                 android:layout_marginTop="@dimen/_5sdp"
                 android:fontFamily="@font/hero_bold"
                 android:gravity="center"
-                android:text="₹ 17,66099"
+                android:text="@string/_17_66099"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_11sdp" />
 

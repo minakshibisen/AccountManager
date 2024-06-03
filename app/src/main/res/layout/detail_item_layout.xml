@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        android:id="@+id/tab_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/color_primary"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/light_gray"
+            android:weightSum="10"
+            android:showDividers="middle">
+
+            <TextView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hero_regular"
+                android:gravity="center"
+                android:paddingHorizontal="@dimen/_2sdp"
+                android:paddingVertical="@dimen/_4sdp"
+                android:text="1"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_9sdp" />
+
+            <TextView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hero_regular"
+                android:gravity="center"
+                android:showDividers="middle"
+                android:paddingVertical="@dimen/_4sdp"
+                android:text="02-06-2024"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:layout_width="@dimen/_115sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hero_regular"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_4sdp"
+                android:text="Bank"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hero_regular"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_4sdp"
+                android:text="1,50,000"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/_11sdp" />
+
+            <TextView
+                android:layout_width="@dimen/_60sdp"
+                android:paddingVertical="@dimen/_4sdp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/hero_regular"
+                android:gravity="center"
+                android:text="50,000"
+                android:textSize="@dimen/_11sdp" />
+
+        </TableRow>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/light_gray" />
+
+    </TableLayout>
+</RelativeLayout>
