@@ -24,14 +24,15 @@
             android:layout_centerVertical="true"
             android:padding="@dimen/_3sdp"
             android:src="@drawable/baseline_arrow_back_24"
-            app:tint="@color/white" />
+            app:tint="@color/white"
+            android:importantForAccessibility="no"/>
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_marginStart="@dimen/_10sdp"
-            android:layout_toRightOf="@id/img_back"
+            android:layout_toEndOf="@id/img_back"
             android:orientation="vertical"
             android:padding="@dimen/_2sdp">
 
@@ -80,7 +81,9 @@
                 android:padding="@dimen/_3sdp"
                 android:src="@drawable/ic_options"
                 app:tint="@color/white" />
+
         </LinearLayout>
+
     </RelativeLayout>
 
     <TableLayout
@@ -117,7 +120,7 @@
                 android:gravity="center"
                 android:showDividers="middle"
                 android:paddingVertical="@dimen/_4sdp"
-                android:text="Date"
+                android:text="@string/date"
                 android:textColor="@color/text_black"
                 android:textSize="@dimen/_11sdp" />
 
@@ -127,7 +130,7 @@
                 android:fontFamily="@font/hero_regular"
                 android:gravity="center"
                 android:paddingVertical="@dimen/_4sdp"
-                android:text="Particular"
+                android:text="@string/particular"
                 android:textColor="@color/text_black"
                 android:textSize="@dimen/_11sdp" />
 
@@ -137,7 +140,7 @@
                 android:fontFamily="@font/hero_regular"
                 android:gravity="center"
                 android:paddingVertical="@dimen/_4sdp"
-                android:text="Debit"
+                android:text="@string/debit"
                 android:textColor="@color/text_black"
                 android:textSize="@dimen/_11sdp" />
 
@@ -232,7 +235,7 @@
                 android:layout_marginTop="@dimen/_5sdp"
                 android:fontFamily="@font/hero_bold"
                 android:gravity="center"
-                android:text="₹ 17,660"
+                android:text="@string/_17_660"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_11sdp" />
 
@@ -255,7 +258,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/hero_bold"
-                android:text="Balance"
+                android:text="@string/balance"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_11sdp" />
 

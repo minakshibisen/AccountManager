@@ -1,37 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/_10sdp"
+    android:paddingVertical="@dimen/_10sdp">
 
     <TextView
         android:id="@+id/text_book_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:fontFamily="@font/hero_bold"
-        android:text="Add New Account"
+        android:paddingVertical="@dimen/_10sdp"
+        android:text="@string/add_new_account"
         android:textColor="@color/black"
         android:textSize="@dimen/_14sdp"
         app:drawableRightCompat="@drawable/baseline_arrow_drop_down_24"
         app:drawableTint="@color/white" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/lightest_gray"
-        android:layout_marginHorizontal="@dimen/_2sdp"
-        android:layout_marginVertical="@dimen/_4sdp"/>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingVertical="@dimen/_5sdp"
-        android:paddingHorizontal="@dimen/_5sdp">
+        android:paddingHorizontal="@dimen/_5sdp"
+        android:paddingVertical="@dimen/_5sdp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -50,12 +46,13 @@
             android:textColorHint="@color/light_gray"
             android:textSize="@dimen/_12sdp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingVertical="@dimen/_5sdp"
-        android:paddingHorizontal="@dimen/_5sdp">
+        android:paddingHorizontal="@dimen/_5sdp"
+        android:paddingVertical="@dimen/_5sdp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -70,16 +67,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_5sdp"
-            android:background="@drawable/custom_bg_edt_box"
-            android:padding="@dimen/_8sdp">
+            android:background="@drawable/round_border_bg">
 
             <com.jaredrummler.materialspinner.MaterialSpinner
                 android:id="@+id/spinner_lead_status"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@drawable/round_border_bg"
                 android:fontFamily="@font/hero_bold"
                 android:textSize="@dimen/_8sdp"
                 app:ms_hint="__Select Lead Status__"
+                app:ms_hint_color="@color/dark_gray"
                 app:ms_padding_bottom="@dimen/_5sdp"
                 app:ms_padding_left="@dimen/_5sdp"
                 app:ms_padding_right="@dimen/_5sdp"
@@ -94,12 +92,12 @@
         android:orientation="horizontal">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_add"
+            android:id="@+id/card_cancel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_5sdp"
             android:layout_marginVertical="@dimen/_10sdp"
             android:layout_weight="1"
-            android:layout_marginHorizontal="@dimen/_5sdp"
             android:backgroundTint="@color/color_primary"
             app:cardCornerRadius="@dimen/_20sdp"
             app:layout_constraintBottom_toTopOf="@id/ll_footer">
@@ -113,7 +111,7 @@
                 android:gravity="center"
                 android:paddingHorizontal="@dimen/_5sdp"
                 android:paddingVertical="@dimen/_10sdp"
-                android:text="Cancel"
+                android:text="@string/cancel"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_13sdp"
                 tools:ignore="DuplicateIds" />
@@ -121,7 +119,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_apply"
+            android:id="@+id/card_save"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/_5sdp"
