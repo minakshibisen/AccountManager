@@ -5,10 +5,10 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.accountmanager.DetailActivity
+import com.example.accountmanager.activity.DetailActivity
 import com.example.accountmanager.databinding.ItemDashboardLayoutBinding
 
-class DashboardRecyclerAdapter(context: Context?) :
+class  DashboardRecyclerAdapter(context: Context?) :
     RecyclerView.Adapter<DashboardRecyclerAdapter.ViewHolder>() {
     private val context: Context?
 

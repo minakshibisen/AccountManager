@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.accountmanager.NotificationActivity
 import com.example.accountmanager.R
 import com.example.accountmanager.adapter.DashboardRecyclerAdapter
 import com.example.accountmanager.databinding.ActivityDashboardBinding

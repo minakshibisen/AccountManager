@@ -1,4 +1,4 @@
-package com.example.accountmanager
+package com.example.accountmanager.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
