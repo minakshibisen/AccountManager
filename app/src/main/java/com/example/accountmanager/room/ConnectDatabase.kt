@@ -1,7 +1,10 @@
 package com.example.accountmanager.room
 
 import androidx.room.Database
+import androidx.room.RoomDatabase
 
 @Database(entities = [Connect::class], version = 1)
-class ConnectDatabase {
+abstract class ConnectDatabase : RoomDatabase() {
+
+   abstract fun ConnectDao():ConnectDao
 }
