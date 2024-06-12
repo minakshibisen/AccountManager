@@ -19,7 +19,7 @@
             android:layout_centerVertical="true"
             android:fontFamily="@font/hero_bold"
             android:layout_marginStart="@dimen/_2sdp"
-            android:text="Search"
+            android:text="@string/search"
             android:textColor="@color/black"
             android:textSize="@dimen/_16sdp" />
 

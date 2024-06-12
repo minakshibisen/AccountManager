@@ -33,4 +33,5 @@
     <string name="_01_jan_2022">01 Jan 2022</string>
     <string name="ifsc_updated_collection_app">IFSC Updated Collection App</string>
     <string name="_23_00">23:00</string>
+    <string name="search">Search</string>
 </resources>

@@ -120,6 +120,7 @@
             android:textSize="@dimen/_12sdp" />
 
         <EditText
+            android:id="@+id/particular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/round_border_bg"

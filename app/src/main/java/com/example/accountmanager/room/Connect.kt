@@ -2,15 +2,14 @@ package com.example.accountmanager.room
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import java.util.Date
 
 
-@Entity(tableName = "Connect")
-data class Connect(
-    @PrimaryKey(autoGenerate = true)
-    val sno :Long,
-    val date :String,
-    val particular :String,
-    val credit :String,
-    val debit :String
-
+@Entity(tableName = "transactions")
+data class Transaction(
+    @PrimaryKey(autoGenerate = true) val id: Int = 0,
+    val date: Date,
+    val particular: String,
+    val amount: Double
 )
+
